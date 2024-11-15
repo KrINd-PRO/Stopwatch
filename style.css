@@ -1,0 +1,116 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 5%);
+}
+
+#Title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4rem;
+
+    color: hsl(0, 0%, 0%);
+    text-shadow: 
+        2px 2px 0px hsl(43, 100%, 57%),   /* Right shadow */
+        -2px -2px 0px hsl(43, 100%, 57%), /* Left shadow */
+        2px -2px 0px hsl(43, 100%, 57%),  /* Bottom shadow */
+        -2px 2px 0px hsl(43, 100%, 57%);  /* Top shadow */
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 30px;
+
+    border: 5px solid;
+    border-color: hsl(43, 100%, 57%);
+    border-radius: 50px;
+
+    background-color: hsl(0, 0%, 0%);
+}
+
+#display{
+    font-size: 5rem;
+    font-family: monospace;
+    font-weight: bold;
+
+    color: hsl(0, 0%, 90%);
+    text-shadow: 
+        2px 2px 0px hsl(43, 100%, 35%),   /* Right shadow */
+        -2px -2px 0px hsl(43, 100%, 35%), /* Left shadow */
+        2px -2px 0px hsl(43, 100%, 45%),  /* Bottom shadow */
+        -2px 2px 0px hsl(43, 100%, 45%);  /* Top shadow */
+    margin-bottom: 20px;
+}
+
+#controls button{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+    min-width: 125px;
+
+    cursor: pointer;
+
+    color: white;
+    text-shadow: 
+        2px 2px 0px hsl(43, 100%, 35%),   /* Right shadow */
+        -2px -2px 0px hsl(43, 100%, 35%), /* Left shadow */
+        2px -2px 0px hsl(43, 100%, 45%),  /* Bottom shadow */
+        -2px 2px 0px hsl(43, 100%, 45%);  /* Top shadow */
+    margin-bottom: 20px;
+
+    transition: border-color 0.5s ease, color 0.5s ease;
+}
+#Start_Button{
+    background-color: hsl(0, 0%, 0%);
+
+    border: 5px solid;
+    border-radius: 50px;
+    border-color: hsl(130, 100%, 70%);
+}
+#Start_Button:hover{
+    background-color: hsl(0, 0%, 0%);
+
+    border: 5px solid;
+    border-radius: 50px;
+    border-color: hsl(43, 100%, 57%);
+
+    color: hsl(130, 100%, 70%);
+}
+
+#Stop_Button{
+    background-color: hsl(0, 0%, 0%);
+
+    border: 5px solid;
+    border-radius: 50px;
+    border-color: hsl(0, 100%, 75%);
+}
+#Stop_Button:hover{
+    background-color: hsl(0, 0%, 0%);
+
+    border: 5px solid;
+    border-radius: 50px;
+    border-color: hsl(43, 100%, 57%);
+
+    color:  hsl(0, 100%, 75%);
+}
+
+#Reset_Button{
+    background-color: hsl(0, 0%, 0%);
+
+    border: 5px solid;
+    border-radius: 50px;
+    border-color: hsl(0, 0%, 75%);
+}
+#Reset_Button:hover{
+    background-color: hsl(0, 0%, 0%);
+
+    border: 5px solid;
+    border-radius: 50px;
+    border-color: hsl(43, 100%, 57%);
+
+    color:  hsl(0, 0%, 75%);
+}
