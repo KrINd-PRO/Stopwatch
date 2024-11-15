@@ -3,6 +3,7 @@
 let Start_Button = document.getElementById("Start_Button");
 let Stop_Button = document.getElementById("Stop_Button");
 let Reset_Button = document.getElementById("Reset_Button");
+let Top_Result_Time = document.getElementById("Top_Result_Time");
 
 let display = document.getElementById("display");
 let Timer = null;
@@ -11,7 +12,6 @@ let Elapsed_Time = 0;
 let Is_Running = true;
 
 Start_Button.onclick = function Start(){
-    console.log("working");
     if(Is_Running){
         Start_Time = Date.now() - Elapsed_Time;
         Timer = setInterval(ubdate, 10);
@@ -23,6 +23,8 @@ Stop_Button.onclick = function Stop(){
         clearInterval(Timer);
         Elapsed_Time = Date.now() - Start_Time;
         Is_Running = true;
+
+        Top_Result_Time.textContent = display.textContent;
     }
 }
 

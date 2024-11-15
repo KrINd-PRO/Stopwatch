@@ -114,3 +114,35 @@ body{
 
     color:  hsl(0, 0%, 75%);
 }
+
+#Result_Bar{
+    display: flex;
+    gap: 10px;
+}
+
+#Top_Result_Name{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+
+    color: hsl(0, 0%, 0%);
+    text-shadow: 
+        2px 2px 0px hsl(43, 100%, 57%),   /* Right shadow */
+        -2px -2px 0px hsl(43, 100%, 57%), /* Left shadow */
+        2px -2px 0px hsl(43, 100%, 57%),  /* Bottom shadow */
+        -2px 2px 0px hsl(43, 100%, 57%);  /* Top shadow */
+}
+
+#Top_Result_Time{
+    display: inline-block;
+    margin-right: 10px;
+
+    font-family: monospace;
+    font-size: 3rem;
+
+    color: hsl(0, 0%, 0%);
+    text-shadow: 
+        2px 2px 0px hsl(43, 100%, 57%),   /* Right shadow */
+        -2px -2px 0px hsl(43, 100%, 57%), /* Left shadow */
+        2px -2px 0px hsl(43, 100%, 57%),  /* Bottom shadow */
+        -2px 2px 0px hsl(43, 100%, 57%);  /* Top shadow */
+}
